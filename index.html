@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tribute Page</title>
+  </head>
+  
+  <body> 
+
+    <div class="container">
+  <div class="jumbotron">
+    <div class="row">
+      <div class="col-md-12">
+
+      <h1 id="title" class="text-center">Meetup registration form</h1>   
+      <br>
+        <p id="description" class="text-center">
+          <em><u>Tell us a little about yourself</u>:</em>
+        </p>
+      <br>
+      
+    <form id="survey-form">
+      
+      <div class="text-center row">
+        <label id="name-label" for="name" class="col-md-2 offset-md-4">* Name: </label>
+        <input autofocus type="text" id="name" name="name" placeholder="Write your name" required>
+      </div>    
+      <br>
+      
+      <div class="text-center row">
+        <label id="email-label" for="e-mail" class="col-md-2 offset-md-4">* E-mail: </label>
+        <input type="email" id="email" name="email" placeholder="Write your e-mail" required>
+      </div>
+      <br>
+      
+      <div class="text-center row">
+        <label id="number-label" for="age" class="col-md-2 offset-md-4">* Age: </label>
+        <input type="number" id="number" name="age" min="1" max="120" placeholder="Age" required>
+      </div>
+      <br>
+      
+      <div class="text-center">
+        <label for="assisted">Have you assisted to one of our meetups before?</label>
+      <br>
+        <select id="dropdown" name="assisted" class="col-md-1 offset-md-1">
+          <option>Yes</option>
+          <option>No</option>
+        </select>
+      </div>
+      <br>
+  
+      <div class="text-center">
+        <label for="pizza">Would you chip in money to order pizza with everyone at the meetup?</label>
+        <ul>
+          <li>Yes <input type="radio" name="radio" value="0"></li>
+          <li>No <input type="radio" name="radio" value="1"></li>
+        </ul>
+      </div>
+  
+      <div class="text-center">
+        <label for="framework">Which front-end frameworks do you like?</label>
+        <ul>
+          <li>React.js <input type="checkbox" name="radio" value="0"></li>
+          <li>Vue.js <input type="checkbox" name="radio" value="1"></li>
+          <li>Angular.js <input type="checkbox" name="radio" value="1"></li>
+        </ul>
+      </div>
+  
+      <div class="text-center">
+        <label>Want to give us some feedback to improve our meetups?</label>
+      <br>
+        <textarea class="col-md-2 offset-md" placeholder="Write some feedback here"></textarea>
+      </div>
+      <hr>
+      
+      <div class="text-center">
+        <button id="submit" type="submit" >Submit</button>
+      </div>
+  
+    </form>
+      </div>
+        </div>
+          </div>
+            </div>
+
+    <footer class="text-center">
+      <hr>
+      <p>By <a href="https://www.github.com/zeligm" target="_blank">Zelig Malamud</a> - 2018</p>
+    </footer>  
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/js/bootstrap.min.js"></script>
+  </body>
+</html>
